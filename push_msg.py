@@ -25,7 +25,7 @@ while True:
     # retrieve json data from talk app
     r = requests.get(url, headers=headers, auth=(user, pw))
     m = (r.json())
-    # iterate through conversations, needs to be automatically fethed.
+    # iterate through conversations, numbers must be specified manually at the moment.
     for i in 0,1,2:
         who = m["ocs"]["data"][i]["lastMessage"]["actorDisplayName"]
         msg = m["ocs"]["data"][i]["lastMessage"]["message"]
