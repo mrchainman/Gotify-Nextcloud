@@ -10,3 +10,5 @@ A working Nextcloud talk instance and a working gotify setup ist needed.
 * Handle Calls
 * Check how it works with group chats
 
+### Contributing
+Please commit your contributions to the development branch
