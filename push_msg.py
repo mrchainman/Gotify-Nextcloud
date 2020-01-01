@@ -24,10 +24,13 @@ headerspush = {'X-Gotify-Key': token}
 while True:
     # retrieve json data from talk app
     r = requests.get(url, headers=headers, auth=(user, pw))
+    # load the json data
     m = (r.json())
     # iterate through conversations, numbers must be specified manually at
     # the moment, this is for the case of 3 conversations.
+    # TODO: parse the number of conversations automatically form the json data
     for i in 0,1,2:
+        # Parse who send the message
         who = m["ocs"]["data"][i]["lastMessage"]["actorDisplayName"]
         msg = m["ocs"]["data"][i]["lastMessage"]["message"]
         # check if message was already pushed
@@ -39,6 +42,7 @@ while True:
         # else send push notification
         else:
             requests.post(urlpush, headers=headerspush, data={'title': who, 'message': msg, 'priority': '10'})
+            # Add the message to the list
             messages.append(msg)
     # wait 5 seconds
     time.sleep( 5 )
