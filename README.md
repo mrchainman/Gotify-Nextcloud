@@ -2,7 +2,7 @@
 A python script that fetches notifications from the nextcloud talk api and pushes them to a gotify server.
 
 ### Usage
-Just adapt the variables in the push_msg.py file and start run the script.
+Just adapt the settings in the settings.py file and start run the script.
 A working Nextcloud talk instance and a working gotify setup ist needed.
 
 ### TODO

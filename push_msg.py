@@ -2,23 +2,19 @@
 import requests
 import json
 import time
+from settings import *
 
-# set nextcloud variables
-url = 'https://cloud.example.com/ocs/v2.php/apps/spreed/api/v1/room'
-user = 'username'
-pw = 'password'
-# set header
+# set nextcloud header
 headers = {'OCS-APIRequest': 'true',
            'Content-Type': 'application/json',
            'Accept': 'application/json'
           }
+
+# set gotify header
+headerspush = {'X-Gotify-Key': token}
+
 # create empty messages list
 messages = []
-
-# set gotify variables
-urlpush = 'gotify-url'
-token = 'gotify-app-token'
-headerspush = {'X-Gotify-Key': token}
 
 # start infinite loop for listening
 while True:
