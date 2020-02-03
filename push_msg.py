@@ -22,10 +22,8 @@ while True:
     r = requests.get(url, headers=headers, auth=(user, pw))
     # load the json data
     m = (r.json())
-    # iterate through conversations, numbers must be specified manually at
-    # the moment, this is for the case of 3 conversations.
-    # TODO: parse the number of conversations automatically form the json data
-    for i in 0,1,2:
+    # Iterate through the conversations
+    for i in range(len(m["ocs"]["data"])):
         # Parse who send the message
         who = m["ocs"]["data"][i]["lastMessage"]["actorDisplayName"]
         msg = m["ocs"]["data"][i]["lastMessage"]["message"]
