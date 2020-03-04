@@ -9,6 +9,7 @@ A working Nextcloud talk instance and a working gotify setup ist needed.
 - [x] Currently the number of conversations must be specified manually. It would be cool to parse the number of conversations from the json data.
 - [ ] Handle Calls
 - [ ] Check how it works with group chats
+- [ ] Find a better way for authentication, as username and password are stored in plaintext in the settings.py file
 
 
 ### Contributing
