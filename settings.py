@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Nextcloud settings
-url='https://example.com'
+url='https://example.com/ocs/v2.php/apps/spreed/api/v1/room'
 user='username'
 pw='secretpw'
 # Gotify settings
