@@ -1,5 +1,5 @@
 # Talkify
-A python script that fetches notifications from the nextcloud talk api and pushes them to a gotify server.
+A python script that fetches notifications from the nextcloud talk api and pushes them to a gotify server.  
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 
