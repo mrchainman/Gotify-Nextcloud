@@ -31,7 +31,7 @@ while True:
         if msg in messages:
             continue
         # check if I wrote the message
-        elif who == "Your Name":
+        elif who == me:
             continue
         # else send push notification
         else:
