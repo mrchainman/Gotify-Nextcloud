@@ -6,11 +6,10 @@ Just adapt the settings in the settings.py file and start run the script.
 A working Nextcloud talk instance and a working gotify setup ist needed.
 
 ### TODO
-* Handle Calls
-* Check how it works with group chats
+- [x] Currently the number of conversations must be specified manually. It would be cool to parse the number of conversations from the json data.
+- [ ] Handle Calls
+- [ ] Check how it works with group chats
 
-### Already done
-* Currently the number of conversations must be specified manually. It would be cool to parse the number of conversations from the json data.
 
 ### Contributing
 Please commit your contributions to the development branch
