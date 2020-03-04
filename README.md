@@ -10,7 +10,3 @@ A working Nextcloud talk instance and a working gotify setup ist needed.
 - [ ] Handle Calls
 - [ ] Check how it works with group chats
 - [ ] Find a better way for authentication, as username and password are stored in plaintext in the settings.py file
-
-
-### Contributing
-Please commit your contributions to the development branch
