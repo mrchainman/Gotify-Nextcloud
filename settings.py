@@ -18,3 +18,6 @@ token='TOKEN'
 
 # Frequency for checking new notifications
 delay=30
+
+# Priority for the notification sent through this channel
+notification_priority='10'
