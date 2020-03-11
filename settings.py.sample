@@ -20,4 +20,5 @@ token='TOKEN'
 delay=30
 
 # Priority for the notification sent through this channel
+# If this is set below 10, there won't be any sound when receiving a message
 notification_priority='10'
