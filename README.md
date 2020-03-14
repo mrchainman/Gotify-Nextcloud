@@ -4,7 +4,7 @@
 
 A Python script that fetches notifications from the Nextcloud notification API and pushes them to a Gotify server.
 
-The code is mostly based on [Talkify](https://github.com/mrchainman/Talkify).
+The code is mostly based on [Talkify](https://github.com/mrchainman/Talkify), which was the old version of this project, that used the Talk specific API.
 
 ### Usage
 
