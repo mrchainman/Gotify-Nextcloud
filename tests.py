@@ -2,7 +2,7 @@
 from push_msg import *
 
 def test_messages_are_empty():
-   assert len(messages) == 0
+   assert len(notifications) == 0
 
 def test_variables_not_empty():
    assert len(url) != 0
@@ -10,5 +10,5 @@ def test_variables_not_empty():
    assert len(pw) != 0
    assert len(urlpush) != 0
    assert len(token) != 0
-   assert len(me) != 0
+   assert len(notification_priority) != 0
 
