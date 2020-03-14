@@ -6,7 +6,8 @@ import time
 try:
     from settings import *
 except:
-    pass
+    print("Please provide a settings.py file")
+    exit(0)
 
 # set nextcloud header
 headers = {'OCS-APIRequest': 'true',
