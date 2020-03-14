@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+
+##########################################
+# Nextcloud settings
+
+url='https://example.com/ocs/v2.php/apps/notifications/api/v2/notifications'
+user='username'
+pw='secretpw'
+
+##########################################
+# Gotify settings
+
+urlpush='https://example.com/message'
+token='TOKEN'
+
+##########################################
+# General settings
+
+# Frequency for checking new notifications
+delay=30
+
+# Priority for the notification sent through this channel
+# If this is set below 10, there won't be any sound when receiving a message
+notification_priority='10'
