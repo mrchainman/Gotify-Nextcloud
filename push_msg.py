@@ -3,7 +3,10 @@
 import requests
 import json
 import time
-from settings import *
+try:
+    from settings import *
+except:
+    pass
 
 # set nextcloud header
 headers = {'OCS-APIRequest': 'true',
