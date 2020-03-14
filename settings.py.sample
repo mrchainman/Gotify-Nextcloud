@@ -10,7 +10,7 @@ pw='secretpw'
 ##########################################
 # Gotify settings
 
-urlpush='https://example.com'
+urlpush='https://example.com/message'
 token='TOKEN'
 
 ##########################################
