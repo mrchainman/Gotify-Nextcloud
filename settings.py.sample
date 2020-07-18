@@ -22,3 +22,6 @@ delay=30
 # Priority for the notification sent through this channel
 # If this is set below 10, there won't be any sound when receiving a message
 notification_priority='10'
+
+# Optional log file
+log_file = 'logs/gotify-nc.log'
