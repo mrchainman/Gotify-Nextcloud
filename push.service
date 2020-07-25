@@ -1,0 +1,10 @@
+[Unit]
+Description=Push nextcloud notifications to a gotify server
+
+[Service]
+ExecStart=/usr/local/bin/push_msg.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

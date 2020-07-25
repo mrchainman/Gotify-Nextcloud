@@ -25,6 +25,7 @@ except FileNotFoundError:
     exit(0)
 except NameError:
     # log_file is an optional, setting and may not be present in older config files
+    print("INFO: No logfile specified, logging is disabled")
     pass
 
 
