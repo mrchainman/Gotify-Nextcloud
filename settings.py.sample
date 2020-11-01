@@ -1,27 +1,28 @@
 #!/usr/bin/python3
+from os import getenv
 
 ##########################################
 # Nextcloud settings
 
-url='https://example.com/ocs/v2.php/apps/notifications/api/v2/notifications'
-user='username'
-pw='secretpw'
+url = getenv('NEXTCLOUD_URL', 'https://nextcloudexample.com')
+user = getenv('NEXTCLOUD_USER', 'username')
+pw = getenv('NEXTCLOUD_PASSWORD', 'secretpw')
 
 ##########################################
 # Gotify settings
 
-urlpush='https://example.com/message'
-token='TOKEN'
+urlpush = getenv('GOTIFY_URL', 'https://gotifyexample.com')
+token = getenv('GOTIFY_TOKEN', 'TOKEN')
 
 ##########################################
 # General settings
 
 # Frequency for checking new notifications
-delay=30
+delay = int(getenv('NOTIFICATION_DELAY', 30))
 
 # Priority for the notification sent through this channel
 # If this is set below 10, there won't be any sound when receiving a message
-notification_priority='10'
+notification_priority = getenv('NOTIFICATION_PRIORITY', '10')
 
 # Optional log file
-log_file = 'logs/gotify-nc.log'
+log_file = getenv('LOG_PATH', 'logs/gotify-nc.log')
