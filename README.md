@@ -2,6 +2,10 @@
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
+## IMPORTANT: Since there are https://github.com/Andrewerr/NextcloudServices and https://github.com/nextcloud/notify_push now, this project is no longer needed.
+## I will neither MAINTAIN the project, nor guarantee for onwards COMPATABILITY.
+## If you feel a need for this project, you are free to fork and change it as needed.
+
 A Python script that fetches notifications from the Nextcloud notification API and pushes them to a Gotify server.
 
 
